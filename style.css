@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    /* font-family: 'Arvo', serif;
+font-family: 'Balsamiq Sans', cursive;
+font-family: 'Be Vietnam Pro', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Source Sans Pro', sans-serif; */
+}
+body{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.top{
+    width: 100vw;
+    background-color: orange;
+    
+}
+.top h1{
+    text-align: center;
+    font-size: 45px;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 40px;
+}
+.top2{
+    width: 100vw;
+    background-color: skyblue;
+    display: flex;
+}
+#change_colour,#easy,#hard{
+    text-decoration: none;
+    color: #fff;
+    padding: 4px 0;
+    font-size: 22px;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+#change_colour{
+    margin-left: 20vw;
+}
+#easy{
+    padding-left: 40vw;
+}
+#hard{
+    padding-left: 40px;
+}
+
+#change_colour:hover{
+    color: black;
+}
+#easy:hover{
+    color: black; 
+}
+#hard:hover{
+    color: black;
+}
+#grid{
+    /* width: 50vw;
+    height: 120px; */
+    margin: auto;
+    margin-top: 10px;
+    border-spacing: 20px;
+}
+
+#grid tr td{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#display{
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    padding-top: 20px;
+}
+#result{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.notice{
+    width: 30vw;
+    background-color: blue;
+    position: absolute;
+    top: 40vh;
+    left: 35vw;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px yellow solid;
+    padding-top: 5vh;
+    color: black;
+    display: none;
+    z-index: 2;
+}
+
+.notice button{
+    background-color: orange;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 13vh;
+    margin-bottom: 4vh;
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px) {
+    .top h1{
+        font-size: 25px;
+    }
+    #display{
+        font-size: 30px;
+    }
+    #result{
+        font-size: 25px;
+    }
+    #change_colour{
+        left : 5vw;
+        font-size: 3vw;
+        margin-left: 15vw;
+    }
+    #easy{
+        font-size: 15px;
+        font-size: 3vw;
+        padding: 5px 0;
+        padding-left: 30vw;
+    }
+    #hard{
+        font-size: 15px;
+        font-size: 3vw;
+        padding: 5px 0;   
+        padding-left: 30px;
+    }
+    #grid tr td{
+        width: 20vw;
+        height: 20vw;
+    }
+}

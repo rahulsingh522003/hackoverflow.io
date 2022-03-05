@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Picker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo&family=Balsamiq+Sans&family=Be+Vietnam+Pro:wght@300&family=Lobster&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Lobster&display=swap"
+        rel="stylesheet">
+    <!-- code for css -->
+    <style>
+        img{
+            display: none;
+        }
+        body {
+            background-image: url("image_1.jfif");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .heading {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-family: 'Lobster', cursive;
+            display: flex;
+            position: absolute;
+            left: 50vw;
+            margin-top: 70px;
+            font-size: 40px;
+            color: #fff;
+            flex-direction: column;
+        }
+
+        .btn {
+            text-align: center;
+        }
+
+        button {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-family: 'Lobster', cursive;
+            border-radius: 30px;
+            font-size: 50px;
+            cursor: pointer;
+            padding: 12px 24px;
+            background-color: transparent;
+            border: 6px solid #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        button:hover {
+            background-color: blueviolet;
+        }
+
+        .anim {
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            position: relative;
+            top: 520px;
+            font-size: 28px;
+            font-family: 'Arvo', serif;
+            padding: auto;
+        }
+
+        .anim h1 {
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 8px solid #fff;
+            animation: text-anim 6s infinite steps(37) alternate;
+        }
+
+        @keyframes text-anim {
+            0% {
+                width: 0ch;
+            }
+
+            45% {
+                width: 14ch;
+            }
+
+            100% {
+                width: 30ch;
+            }
+        }
+
+        /* code for media query */
+
+        @media screen and (max-width:1100px) {
+            body {
+                background-image: none;
+                background-color: rgba(135, 37, 226, 0.973);
+            }
+               
+            img{
+                display: flex;
+                margin: auto;
+                margin-top: 40px;
+                width: 200px;
+                height: 130px;
+            }
+            .anim h1 {
+                display: none;
+            }
+
+            .heading {
+                display: flex;
+                position: static;
+                justify-content: center;
+                text-align: center;
+                font-size: 35px;
+                margin-top: 0px;
+            }
+        }
+        @media screen and (max-width:496px) {
+            img{
+                width: 150px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image">
+        <img src="image8-removebg-preview.png" alt="">
+    </div>
+    <div class="heading">
+        <h1>COLOUR PICKER</h1>
+        <div class="btn">
+            <button><a href="game.html">PLAY</a></button>
+        </div>
+    </div>
+    <div class="anim">
+        <h1>Play colour picker and be a champion.</h1>
+    </div>
+</body>
+
+</html>
