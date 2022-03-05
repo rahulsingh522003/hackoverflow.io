@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colour Picker</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arvo&family=Balsamiq+Sans&family=Be+Vietnam+Pro:wght@300&family=Lobster&family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo&family=Balsamiq+Sans&family=Be+Vietnam+Pro:wght@300&family=Lobster&family=Source+Sans+Pro:ital@1&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <div class="top">
         <h1>COLOUR PICKER</h1>
@@ -17,18 +22,19 @@
         <h2 id="result">Select the tile with given color!</h2>
     </div>
     <div class="top2">
-        <button id = "change_colour" onclick="levelChange('same')">Change Colour</button>
+        <button id="change_colour" onclick="levelChange('same')">Change Colour</button>
         <button id="easy" onclick="levelChange('easy')">EASY</button>
         <button id="hard" onclick="levelChange('hard')">HARD</button>
-        
+
     </div>
     <div id="game">
         <table id="grid"></table>
     </div>
     <div class="notice" id="notice">
         <p>You Won!</p>
-         <button onclick="levelChange('same')">Play Again</button>
-     </div>
+        <button onclick="levelChange('same')">Play Again</button>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
